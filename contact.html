@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Pulse Labs</title>
+<meta name="description" content="Start a project with Pulse Labs. Tell us about your problem and we'll get back within one business day.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%237c5cff%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .form-success{ display:none; margin-top:18px; padding:14px 18px; border-radius:var(--radius-sm); background:rgba(78,230,168,0.1); border:1px solid rgba(78,230,168,0.3); color:var(--mint); font-size:14px; font-family:var(--font-mono); }
+</style>
+</head>
+<body>
+
+<div class="loader">
+  <div class="loader-inner">
+    <div class="loader-mark">PULSE<span>LABS</span></div>
+    <div class="loader-bar"></div>
+    <div class="loader-pct">Loading experience…</div>
+  </div>
+</div>
+<div class="cursor-glow"></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>PULSE LABS</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost btn-sm">Let's talk</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+      <div class="eyebrow">get in touch</div>
+      <h1>Tell us what you're building.</h1>
+      <p class="lead">Fill out the form and a senior team member will reply within one business day — usually sooner.</p>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="contact-grid">
+        <form id="contact-form" class="reveal" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" data-validate="required" placeholder="Jane Doe">
+              <div class="field-error">Please enter your name.</div>
+            </div>
+            <div class="field">
+              <label for="email">Work email</label>
+              <input type="email" id="email" name="email" data-validate="email" placeholder="jane@company.com">
+              <div class="field-error">Please enter a valid email address.</div>
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company Inc.">
+            </div>
+            <div class="field">
+              <label for="budget">Budget range</label>
+              <select id="budget" name="budget">
+                <option>Under $10k</option>
+                <option>$10k – $30k</option>
+                <option>$30k – $100k</option>
+                <option>$100k+</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="service">Service needed</label>
+            <select id="service" name="service">
+              <option>AI Development</option>
+              <option>Web Development</option>
+              <option>Mobile App Development</option>
+              <option>Cloud Solutions</option>
+              <option>UI/UX Design</option>
+              <option>Not sure yet</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" data-validate="min10" placeholder="What are you trying to build, and by when?"></textarea>
+            <div class="field-error">Tell us a little more — at least 10 characters.</div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <div class="form-success">Message received. We'll reply within one business day.</div>
+        </form>
+
+        <div class="reveal">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">@</div>
+            <div><h4>Email</h4><p>hello@pulselabs.dev</p></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">☏</div>
+            <div><h4>Phone</h4><p>+1 (000) 000-0000</p></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">⌖</div>
+            <div><h4>Studio</h4><p>Lahore, Pakistan — remote-first, working across time zones.</p></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">◷</div>
+            <div><h4>Response time</h4><p>Within 1 business day, every time.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="section-head center reveal">
+        <div class="eyebrow" style="justify-content:center;">faq</div>
+        <h2>Before you write in</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item active">
+          <button class="faq-q"><span>What should I include in my message?</span><span class="plus"></span></button>
+          <div class="faq-a" style="max-height:200px;"><div class="faq-a-inner">The problem you're solving, rough timeline, and budget range — even an estimate helps us scope a useful first call.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Is the first call free?</span><span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Always. A 30-minute scoping call costs nothing and you'll walk away with a clear next step either way.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q"><span>Do you sign NDAs before discussing scope?</span><span class="plus"></span></button>
+          <div class="faq-a"><div class="faq-a-inner">Yes — happy to sign a mutual NDA before any detailed technical discussion if that's required on your end.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-dot"></span>PULSE LABS</a>
+        <p>An AI &amp; software development agency building products for companies who refuse to ship average.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">gh</a>
+          <a href="#" aria-label="Dribbble">db</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#ai">AI Development</a></li>
+          <li><a href="services.html#web">Web Development</a></li>
+          <li><a href="services.html#mobile">Mobile Apps</a></li>
+          <li><a href="services.html#cloud">Cloud Solutions</a></li>
+          <li><a href="services.html#design">UI/UX Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@pulselabs.dev">hello@pulselabs.dev</a></li>
+          <li><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
+          <li><a href="#">Lahore · Remote-first</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="cur-year"></span> Pulse Labs. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+
+<script src="script.js"></script>
+</body>
+</html>

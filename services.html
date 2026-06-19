@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — Pulse Labs</title>
+<meta name="description" content="AI Development, Web Development, Mobile App Development, Cloud Solutions, and UI/UX Design — explore how Pulse Labs delivers each service.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%237c5cff%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .service-detail{ display:grid; grid-template-columns:auto 1fr; gap:48px; padding:64px 0; border-top:1px solid var(--border-soft); }
+  .service-detail:last-of-type{ border-bottom:1px solid var(--border-soft); }
+  .service-detail-label{ font-family:var(--font-mono); font-size:13px; color:var(--text-3); padding-top:4px; min-width:140px; }
+  .service-detail-label b{ display:block; color:var(--signal); font-size:34px; font-family:var(--font-display); margin-bottom:8px; }
+  .service-detail-feats{ display:grid; grid-template-columns:repeat(2,1fr); gap:14px; margin:24px 0 0; }
+  .service-detail-feats div{ font-size:14px; color:var(--text-2); display:flex; gap:10px; align-items:flex-start; }
+  .service-detail-feats div::before{ content:'→'; color:var(--signal); }
+  @media (max-width:800px){ .service-detail{ grid-template-columns:1fr; gap:20px; } .service-detail-feats{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<div class="loader">
+  <div class="loader-inner">
+    <div class="loader-mark">PULSE<span>LABS</span></div>
+    <div class="loader-bar"></div>
+    <div class="loader-pct">Loading experience…</div>
+  </div>
+</div>
+<div class="cursor-glow"></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>PULSE LABS</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost btn-sm">Let's talk</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Services</div>
+      <div class="eyebrow">capabilities</div>
+      <h1>Five disciplines. One accountable team.</h1>
+      <p class="lead">We don't sub-contract. Every discipline below sits inside the same studio, working the same sprint calendar.</p>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+
+      <div class="service-detail reveal" id="ai">
+        <div class="service-detail-label"><b>01</b>AI Development</div>
+        <div>
+          <h2>Production AI, not a proof-of-concept.</h2>
+          <p style="margin-top:14px; max-width:640px;">We design and ship LLM-powered products: voice agents, retrieval-augmented chat, document intelligence, and custom fine-tuned models — engineered for accuracy, cost, and latency in real traffic, not a Jupyter notebook.</p>
+          <div class="service-detail-feats">
+            <div>Voice &amp; chat agents (Vapi, Twilio)</div>
+            <div>RAG pipelines with vector search</div>
+            <div>LLM fine-tuning &amp; evaluation</div>
+            <div>Multi-agent orchestration</div>
+          </div>
+          <a href="contact.html" class="btn btn-ghost btn-sm" style="margin-top:26px;">Discuss an AI build</a>
+        </div>
+      </div>
+
+      <div class="service-detail reveal" id="web">
+        <div class="service-detail-label"><b>02</b>Web Development</div>
+        <div>
+          <h2>Fast, accessible, built to scale.</h2>
+          <p style="margin-top:14px; max-width:640px;">From marketing sites that convert to complex internal platforms handling millions of records — we build with modern frameworks, clean APIs, and performance budgets enforced from sprint one.</p>
+          <div class="service-detail-feats">
+            <div>React, Next.js, Vue applications</div>
+            <div>Headless CMS &amp; e-commerce</div>
+            <div>API design &amp; microservices</div>
+            <div>Core Web Vitals optimization</div>
+          </div>
+          <a href="contact.html" class="btn btn-ghost btn-sm" style="margin-top:26px;">Discuss a web build</a>
+        </div>
+      </div>
+
+      <div class="service-detail reveal" id="mobile">
+        <div class="service-detail-label"><b>03</b>Mobile Apps</div>
+        <div>
+          <h2>Native feel, cross-platform speed.</h2>
+          <p style="margin-top:14px; max-width:640px;">We ship iOS and Android apps that feel hand-built for each platform — with offline support, push notifications, and analytics wired in before you ever submit to the App Store.</p>
+          <div class="service-detail-feats">
+            <div>React Native &amp; Flutter</div>
+            <div>Native Swift &amp; Kotlin modules</div>
+            <div>App Store &amp; Play Store launch support</div>
+            <div>Crash reporting &amp; analytics</div>
+          </div>
+          <a href="contact.html" class="btn btn-ghost btn-sm" style="margin-top:26px;">Discuss a mobile build</a>
+        </div>
+      </div>
+
+      <div class="service-detail reveal" id="cloud">
+        <div class="service-detail-label"><b>04</b>Cloud Solutions</div>
+        <div>
+          <h2>Infrastructure that doesn't page you at 3am.</h2>
+          <p style="margin-top:14px; max-width:640px;">We architect cloud systems for resilience and cost-efficiency: infrastructure as code, autoscaling, observability, and incident runbooks so your team sleeps through the night.</p>
+          <div class="service-detail-feats">
+            <div>AWS, GCP &amp; Azure architecture</div>
+            <div>Kubernetes &amp; container orchestration</div>
+            <div>CI/CD pipelines</div>
+            <div>Cost audits &amp; optimization</div>
+          </div>
+          <a href="contact.html" class="btn btn-ghost btn-sm" style="margin-top:26px;">Discuss your infrastructure</a>
+        </div>
+      </div>
+
+      <div class="service-detail reveal" id="design">
+        <div class="service-detail-label"><b>05</b>UI/UX Design</div>
+        <div>
+          <h2>Design systems that survive contact with reality.</h2>
+          <p style="margin-top:14px; max-width:640px;">Research-led design, from low-fidelity flows to production-ready component libraries — built in lockstep with engineering so nothing gets lost in translation.</p>
+          <div class="service-detail-feats">
+            <div>User research &amp; usability testing</div>
+            <div>Wireframes &amp; interactive prototypes</div>
+            <div>Design systems &amp; component libraries</div>
+            <div>Accessibility audits (WCAG)</div>
+          </div>
+          <a href="contact.html" class="btn btn-ghost btn-sm" style="margin-top:26px;">Discuss a design engagement</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="section-head center reveal">
+        <div class="eyebrow" style="justify-content:center;">engagement models</div>
+        <h2>Three ways to work with us</h2>
+      </div>
+      <div class="pricing-grid stagger">
+        <div class="price-card reveal">
+          <div class="price-name">Sprint</div>
+          <div class="price-amount">$8k<span>/sprint</span></div>
+          <p class="price-desc">For a focused feature, MVP, or proof-of-concept on a fixed two-week cycle.</p>
+          <ul class="price-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"/></svg>1 senior engineer + designer</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"/></svg>Daily async updates</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"/></svg>Working demo every sprint</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost btn-block">Start a sprint</a>
+        </div>
+        <div class="price-card is-featured reveal">
+          <div class="price-badge">Most chosen</div>
+          <div class="price-name">Squad</div>
+          <div class="price-amount">$22k<span>/month</span></div>
+          <p class="price-desc">A dedicated cross-functional squad embedded with your team for ongoing delivery.</p>
+          <ul class="price-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"/></svg>4-person dedicated squad</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"/></svg>Dedicated PM &amp; Slack channel</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"/></svg>Architecture + QA included</li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary btn-block">Build my squad</a>
+        </div>
+        <div class="price-card reveal">
+          <div class="price-name">Partner</div>
+          <div class="price-amount">Custom</div>
+          <p class="price-desc">For multi-team programs, platform rebuilds, or long-term AI roadmaps.</p>
+          <ul class="price-features">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"/></svg>Multiple squads, scaled to need</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"/></svg>Quarterly roadmap planning</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2"/></svg>Dedicated SLA &amp; on-call</li>
+          </ul>
+          <a href="contact.html" class="btn btn-ghost btn-block">Talk to sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Not sure which service fits your problem?</h2>
+        <a href="contact.html" class="btn btn-primary">Get a free scoping call →</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-dot"></span>PULSE LABS</a>
+        <p>An AI &amp; software development agency building products for companies who refuse to ship average.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">gh</a>
+          <a href="#" aria-label="Dribbble">db</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#ai">AI Development</a></li>
+          <li><a href="services.html#web">Web Development</a></li>
+          <li><a href="services.html#mobile">Mobile Apps</a></li>
+          <li><a href="services.html#cloud">Cloud Solutions</a></li>
+          <li><a href="services.html#design">UI/UX Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@pulselabs.dev">hello@pulselabs.dev</a></li>
+          <li><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
+          <li><a href="#">Lahore · Remote-first</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="cur-year"></span> Pulse Labs. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+
+<script src="script.js"></script>
+</body>
+</html>

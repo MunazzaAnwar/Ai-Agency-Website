@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — Pulse Labs</title>
+<meta name="description" content="Notes on AI engineering, product design, and building software that lasts — from the Pulse Labs team.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%237c5cff%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader">
+  <div class="loader-inner">
+    <div class="loader-mark">PULSE<span>LABS</span></div>
+    <div class="loader-bar"></div>
+    <div class="loader-pct">Loading experience…</div>
+  </div>
+</div>
+<div class="cursor-glow"></div>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo"><span class="logo-dot"></span>PULSE LABS</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-ghost btn-sm">Let's talk</a>
+      <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Blog</div>
+      <div class="eyebrow">notes &amp; field reports</div>
+      <h1>Writing from the people building the work.</h1>
+      <p class="lead">Engineering deep-dives, design rationale, and honest field reports from inside our sprints.</p>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+
+      <div class="blog-featured reveal">
+        <div class="blog-media">case study · ai development</div>
+        <div class="blog-featured-body">
+          <div class="blog-tag">Featured</div>
+          <h2>What it actually took to cut support call volume by 70%</h2>
+          <p>A field report on building Nimbus's voice concierge: the failure modes we hit, why we dropped our first retrieval architecture, and what shipped instead.</p>
+          <div class="blog-meta" style="border-top:none; padding-top:0; margin-top:18px;"><span>Priya Raman</span><span>9 min read</span></div>
+        </div>
+      </div>
+
+      <div class="blog-grid stagger">
+        <div class="blog-card reveal">
+          <div class="blog-media">web development</div>
+          <div class="blog-body">
+            <div class="blog-tag">Engineering</div>
+            <h3>Why we stopped reaching for microservices by default</h3>
+            <p>A modular monolith bought us three extra months of velocity. Here's the math we used to decide.</p>
+            <div class="blog-meta"><span>Jonas Mäkinen</span><span>6 min</span></div>
+          </div>
+        </div>
+        <div class="blog-card reveal">
+          <div class="blog-media">design</div>
+          <div class="blog-body">
+            <div class="blog-tag">Design</div>
+            <h3>Design systems fail at the edges, not the center</h3>
+            <p>Buttons are easy. The real test of a design system is your empty states and your error copy.</p>
+            <div class="blog-meta"><span>Leo Conti</span><span>5 min</span></div>
+          </div>
+        </div>
+        <div class="blog-card reveal">
+          <div class="blog-media">ai development</div>
+          <div class="blog-body">
+            <div class="blog-tag">AI</div>
+            <h3>RAG isn't a database problem, it's a relevance problem</h3>
+            <p>Most "broken" RAG pipelines we inherit are tuned wrong, not architected wrong. Here's our checklist.</p>
+            <div class="blog-meta"><span>Priya Raman</span><span>8 min</span></div>
+          </div>
+        </div>
+        <div class="blog-card reveal">
+          <div class="blog-media">mobile</div>
+          <div class="blog-body">
+            <div class="blog-tag">Mobile</div>
+            <h3>The offline-first checklist we run on every app</h3>
+            <p>Connectivity is a feature, not an assumption. Twelve things we verify before any mobile launch.</p>
+            <div class="blog-meta"><span>Ayesha Khan</span><span>4 min</span></div>
+          </div>
+        </div>
+        <div class="blog-card reveal">
+          <div class="blog-media">cloud</div>
+          <div class="blog-body">
+            <div class="blog-tag">Cloud</div>
+            <h3>The on-call rotation that actually let our engineers sleep</h3>
+            <p>Alert fatigue nearly burned out a team in 2024. Here's the runbook overhaul that fixed it.</p>
+            <div class="blog-meta"><span>Ayesha Khan</span><span>7 min</span></div>
+          </div>
+        </div>
+        <div class="blog-card reveal">
+          <div class="blog-media">product</div>
+          <div class="blog-body">
+            <div class="blog-tag">Product</div>
+            <h3>Scoping a fixed-price sprint without lying to the client</h3>
+            <p>How we estimate two-week sprints honestly, and what we do the moment scope creeps.</p>
+            <div class="blog-meta"><span>Jonas Mäkinen</span><span>5 min</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container">
+      <div class="cta-band reveal">
+        <h2>Get one sharp idea a month. No spam, ever.</h2>
+        <div>
+          <form class="newsletter-form">
+            <input type="email" placeholder="you@company.com" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="form-msg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo"><span class="logo-dot"></span>PULSE LABS</a>
+        <p>An AI &amp; software development agency building products for companies who refuse to ship average.</p>
+        <div class="social-row">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="GitHub">gh</a>
+          <a href="#" aria-label="Dribbble">db</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#ai">AI Development</a></li>
+          <li><a href="services.html#web">Web Development</a></li>
+          <li><a href="services.html#mobile">Mobile Apps</a></li>
+          <li><a href="services.html#cloud">Cloud Solutions</a></li>
+          <li><a href="services.html#design">UI/UX Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@pulselabs.dev">hello@pulselabs.dev</a></li>
+          <li><a href="tel:+10000000000">+1 (000) 000-0000</a></li>
+          <li><a href="#">Lahore · Remote-first</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="cur-year"></span> Pulse Labs. All rights reserved.</span>
+      <span>Privacy Policy · Terms of Service</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+
+<script src="script.js"></script>
+</body>
+</html>
